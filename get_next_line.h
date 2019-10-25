@@ -6,7 +6,7 @@
 /*   By: ikhadem <ikhadem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 17:36:57 by ikhadem           #+#    #+#             */
-/*   Updated: 2019/10/24 14:52:45 by ikhadem          ###   ########.fr       */
+/*   Updated: 2019/10/25 12:17:07 by ikhadem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 # include <stdlib.h>
 # include <stdio.h>
 
-# define BUFFER_SIZE 1000000
+# define BUFFER_SIZE 100
 # define MAX_FD 10240
-
+# define MAX_LENGTH 2147483647
 
 int		has_char(char *str, int c);
 int		get_next_line(int fd, char **line);
-int		set_line(char **reads, char **line, int fd, int c);
+int		set_line(char **reads, char **line, int fd);
 char	*ft_newstr(size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 size_t	ft_strlen(const char *s);

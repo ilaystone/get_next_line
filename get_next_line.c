@@ -6,7 +6,7 @@
 /*   By: ikhadem <ikhadem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 01:10:36 by ikhadem           #+#    #+#             */
-/*   Updated: 2019/10/24 14:52:13 by ikhadem          ###   ########.fr       */
+/*   Updated: 2019/10/25 09:47:08 by ikhadem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int		get_next_line(int fd, char **line)
 		return (-1);
 	else if (c == 0 && (reads[fd] == NULL || reads[fd][0] == '\0'))
 		return (0);
-	return (set_line(reads, line, fd, c));
+	return (set_line(reads, line, fd));
 }
 
 /*
@@ -59,12 +59,12 @@ int		get_next_line(int fd, char **line)
 **	from reads leaving only the chars exlpicitly after '\n'
 */
 
-int		set_line(char **reads, char **line, int fd, int c)
+int		set_line(char **reads, char **line, int fd)
 {
 	char	*res;
 	int		len;
 
-	res = malloc(BUFFER_SIZE);
+	res = malloc(MAX_LENGTH);
 	len = 0;
 	while (reads[fd][len] != '\n' && reads[fd][len] != '\0')
 	{
