@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikhadem <ikhadem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 17:36:57 by ikhadem           #+#    #+#             */
-/*   Updated: 2019/10/25 12:17:07 by ikhadem          ###   ########.fr       */
+/*   Updated: 2019/10/31 14:17:10 by ikhadem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 # include <libc.h>
 # include <stdlib.h>
 # include <stdio.h>
 
-# define BUFFER_SIZE 100
 # define MAX_FD 10240
 # define MAX_LENGTH 2147483647
 
